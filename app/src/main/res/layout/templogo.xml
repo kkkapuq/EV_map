@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_margin="50dp"
-        android:background="@drawable/templogo"
-        android:contentDescription="person button">
-    </ImageView>
+        android:background="@drawable/logo3"
+        android:contentDescription="person button"></ImageView>
+
+
 
 </LinearLayout>

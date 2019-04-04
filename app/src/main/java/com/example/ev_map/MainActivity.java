@@ -7,9 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 
+import java.security.MessageDigest;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,17 +16,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        try {
-            PackageInfo info = getPackageManager().getPackageInfo("com.example.ev_map", PackageManager.GET_SIGNATURES);
+        /*try{
+            PackageInfo info = getPackageManager().getPackageInfo(getPackageName(), PackageManager.GET_SIGNATURES);
             for (Signature signature : info.signatures) {
-                MessageDigest md = MessageDigest.getInstance("SHA");
+                MessageDigest md;
+                md = MessageDigest.getInstance("SHA");
                 md.update(signature.toByteArray());
-                Log.e("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
+                String key = new String(Base64.encode(md.digest(), 0));
+                Log.d("Hash key:", "!!!!!!!"+key+"!!!!!!");
             }
-        } catch (PackageManager.NameNotFoundException e) {
-            e.printStackTrace();
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        }
+        } catch (Exception e){
+            Log.e("name not found", e.toString());
+        }*/
     }
 }

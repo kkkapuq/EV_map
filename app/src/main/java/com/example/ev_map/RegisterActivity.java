@@ -3,11 +3,11 @@ package com.example.ev_map;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class firstinformation extends AppCompatActivity {
-//test
+public class RegisterActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_firstinformation);
+        setContentView(R.layout.activity_register);
     }
 }

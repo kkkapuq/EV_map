@@ -3,7 +3,6 @@
     package="com.example.ev_map">
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
-    <meta-data android:name="com.kakao.sdk.AppKey" android:value="ebb08f6fb31bf2e416757fe03aa58fc0"/>
 
     <application
         android:allowBackup="true"
@@ -13,7 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDkxeqi_T8WMsiRdSDyES_0FVUvEYYMigg" />
+
         <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity"/>
 
         <uses-library
             android:name="org.apache.http.legacy"
